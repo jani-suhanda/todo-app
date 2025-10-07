@@ -1,0 +1,258 @@
+{
+	"info": {
+		"_postman_id": "95e670c3-5cc2-41ec-bf28-5dd83370981f",
+		"name": "TODOS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9116982"
+	},
+	"item": [
+		{
+			"name": "GET root",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Github-Token",
+						"value": "-",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://automatic-carnival-4jpgj5qjw5ggcq96w-3000.app.github.dev/",
+					"protocol": "https",
+					"host": [
+						"automatic-carnival-4jpgj5qjw5ggcq96w-3000",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET todos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Github-Token",
+						"value": "-",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://automatic-carnival-4jpgj5qjw5ggcq96w-3000.app.github.dev/api/todos",
+					"protocol": "https",
+					"host": [
+						"automatic-carnival-4jpgj5qjw5ggcq96w-3000",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"api",
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET todos by id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Github-Token",
+						"value": "-",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://automatic-carnival-4jpgj5qjw5ggcq96w-3000.app.github.dev/api/todos/1",
+					"protocol": "https",
+					"host": [
+						"automatic-carnival-4jpgj5qjw5ggcq96w-3000",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"api",
+						"todos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Todo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Github-Token",
+						"value": "-",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"makan baso\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://automatic-carnival-4jpgj5qjw5ggcq96w-3000.app.github.dev/api/todos",
+					"protocol": "https",
+					"host": [
+						"automatic-carnival-4jpgj5qjw5ggcq96w-3000",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"api",
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Github-Token",
+						"value": "-",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"Kodok\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://automatic-carnival-4jpgj5qjw5ggcq96w-3000.app.github.dev/api/todos/1",
+					"protocol": "https",
+					"host": [
+						"automatic-carnival-4jpgj5qjw5ggcq96w-3000",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"api",
+						"todos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Github-Token",
+						"value": "-",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://automatic-carnival-4jpgj5qjw5ggcq96w-3000.app.github.dev/api/todos/1",
+					"protocol": "https",
+					"host": [
+						"automatic-carnival-4jpgj5qjw5ggcq96w-3000",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"api",
+						"todos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
