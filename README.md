@@ -12,3 +12,5 @@ echo $GITHUB_TOKEN
 
 buat header nya : "X-Github-Token: TOKEN"
 
+Terima kasih
+
